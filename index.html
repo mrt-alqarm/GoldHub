@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سياسة الخصوصية | GoldHub</title>
+  <meta name="description" content="سياسة الخصوصية لتطبيق GoldHub لإدارة وتتبع الأصول الذهبية والمالية." />
+  <style>
+    :root{
+      --bg:#0f1217; --card:#151a22; --text:#e7ecef; --muted:#9aa6af;
+      --accent:#ffd166; --accent2:#06d6a0; --danger:#ef476f; --link:#4ea8de;
+      --border:#232a36;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic","IBM Plex Sans Arabic",sans-serif;line-height:1.7}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#30394a,#1d2430);display:grid;place-items:center;border:1px solid var(--border)}
+    .logo svg{width:26px;height:26px;fill:var(--accent)}
+    .title h1{margin:0;font-size:1.6rem}
+    .title p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+    .badge{background:rgba(255,209,102,.1);color:var(--accent);border:1px solid rgba(255,209,102,.2);padding:6px 10px;border-radius:999px;font-size:.85rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:16px}
+    h2{margin:0 0 10px;font-size:1.3rem}
+    h3{margin:0 0 8px;font-size:1.05rem;color:var(--muted)}
+    .list{display:grid;gap:10px}
+    .list li{list-style:none;padding:12px;border:1px dashed var(--border);border-radius:12px;background:#121722}
+    .lead{font-weight:600;color:#cbd5e1;margin-bottom:6px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    @media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+    footer{margin-top:28px;color:var(--muted);font-size:.9rem}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#121722;color:#cbd5e1;margin-right:8px}
+    .note{background:#121722;border-left:4px solid var(--accent);padding:12px;border-radius:10px;border:1px solid var(--border);color:#cbd5e1}
+    .code{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#0c1016;padding:2px 6px;border-radius:6px;border:1px solid var(--border)}
+    .lang-toggle{display:flex;gap:8px}
+    .lang-toggle button{background:#121722;color:#cbd5e1;border:1px solid var(--border);padding:8px 12px;border-radius:10px;cursor:pointer}
+    .lang-toggle button.active{border-color:rgba(6,214,160,.5);color:var(--accent2)}
+    [data-lang="en"]{display:none}
+    .section{margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="container" id="app">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.2L17.8 20 12 16.9 6.2 20l1.3-6.9L3 8.9 9 8l3-6z"/></svg>
+        </div>
+        <div class="title">
+          <h1>سياسة الخصوصية — GoldHub</h1>
+          <p>وثيقة شفافة توضّح كيفية جمع البيانات واستخدامها وحمايتها داخل النظام</p>
+        </div>
+      </div>
+      <div class="lang-toggle" aria-label="language switch">
+        <button class="active" onclick="setLang('ar')">العربية</button>
+        <button onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <!-- Arabic -->
+    <main data-lang="ar">
+      <div class="card">
+        <div class="section">
+          <span class="badge">آخر تحديث: 2025-11-29</span>
+        </div>
+        <div class="section">
+          <h2>مقدمة عن النظام</h2>
+          <p>
+            GoldHub هو نظام محلي لإدارة وتتبع الأصول الذهبية والمالية للأفراد والشركات والمتاجر. يعتمد النظام على قاعدة بيانات محلية مشفرة
+            ويتيح قياس الربح ونمو رأس المال وفق مرجع الذهب عيار 24، مع مؤشرات مقارنة بالدولار لأغراض التحليل فقط.
+          </p>
+          <div class="note">
+            لا يعتمد GoldHub على خوادم خارجية أو تخزين سحابي؛ جميع العمليات والبيانات تتم محليًا على جهاز المستخدم.
+          </div>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>البيانات التي نجمعها</h2>
+          <ul class="list">
+            <li>
+              <div class="lead">بيانات تعريفية للتوقيع الإلكتروني</div>
+              <div class="muted">مثل الاسم، معلومات اتصال أساسية (إن توفرت ويقوم المستخدم بإدخالها)، تُستخدم لتوليد توقيع إلكتروني وSN مشتق لضمان الهوية.</div>
+            </li>
+            <li>
+              <div class="lead">بيانات الأصول والحركات</div>
+              <div class="muted">أرصدة الذهب (24/21/18)، المخزون المصوغ وغير المصوغ، أرصدة العملات، الحركات النقدية، وإيصالات المعاملات بصيغة PDF.</div>
+            </li>
+            <li>
+              <div class="lead">بيانات توثيق اللقطات</div>
+              <div class="muted">سجلات اللقطات اليومية ثم الأسبوعية، الهاش للتحقق من صحة القيود، وسعر الذهب المرجعي لكل لقطة.</div>
+            </li>
+            <li>
+              <div class="lead">إعدادات الاستخدام</div>
+              <div class="muted">اختيار اللغة بناءً على العملة المحلية، خيارات الإيصال (الشعار، الرقم الضريبي، السجل التجاري، الموقع الإلكتروني)، وسياسات تحديث الأسعار.</div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>ما لا نجمعه</h2>
+          <ul class="list">
+            <li><div class="lead">الموقع الجغرافي</div><div class="muted">لا يتم تتبع الموقع أو جمع بيانات GPS.</div></li>
+            <li><div class="lead">الصور والوسائط الشخصية</div><div class="muted">لا يتم الوصول إلى الوسائط إلا إذا قام المستخدم بإدراج شعار للإيصال بشكل صريح.</div></li>
+            <li><div class="lead">المعرفات الإعلانية</div><div class="muted">لا يستخدم النظام معرفات لأغراض الدعاية أو التتبع الإعلاني.</div></li>
+            <li><div class="lead">إرسال البيانات لطرف ثالث</div><div class="muted">لا يتم بيع أو مشاركة البيانات مع أي جهة خارجية.</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>التخزين والأمان</h2>
+          <ul class="list">
+            <li>
+              <div class="lead">قاعدة بيانات محلية مشفرة</div>
+              <div class="muted">تتم أرشفة البيانات محليًا بشكل مشفر، مع آليات تحقق ذاتي توقف النظام عند أي خلل في التوثيق.</div>
+            </li>
+            <li>
+              <div class="lead">ملفات التوقيع الإلكتروني</div>
+              <div class="muted">يُحفظ ملف التوقيع الإلكتروني بصيغة مشفرة في مسار التطبيق والذاكرة الخارجية، مرتبطًا بـSN لضمان الاستقرار الهووي.</div>
+            </li>
+            <li>
+              <div class="lead">حماية الهوية والملفات</div>
+              <div class="muted">الملفات وقاعدة البيانات الموثقة تدعم مستخدمًا واحدًا، ولا يمكن لمستخدم آخر استعادتها.</div>
+            </li>
+            <li>
+              <div class="lead">نصيحة أمان</div>
+              <div class="muted">يُنصح بالاحتفاظ بنسخ احتياطية مشفرة من الملفات مع SN في مكان موثوق لتجنب فقدان البيانات عند تعطل الجهاز أو تبديله.</div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>استخدام البيانات</h2>
+          <ul class="list">
+            <li>
+              <div class="lead">أغراض تشغيلية بحتة</div>
+              <div class="muted">البيانات تستخدم لتوليد التقارير، حساب المؤشرات، إصدار الإيصالات، وتوثيق اللقطات والتحقق من صحة القيود.</div>
+            </li>
+            <li>
+              <div class="lead">لا مشاركة خارجية</div>
+              <div class="muted">لا تُرسل البيانات لأي خوادم أو أطراف ثالثة، ولا تُستخدم لأغراض تسويقية أو تحليل سلوكي خارجي.</div>
+            </li>
+            <li>
+              <div class="lead">الشفافية في الأسعار</div>
+              <div class="muted">سعر الذهب يُحدَّث تلقائيًا من مصادر عالمية مع توثيق مرجعي لكل لقطة؛ سعر الصرف يتطلب موافقة أو تعديل يدوي ليعكس السوق الفعلي.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>حقوق المستخدم</h2>
+          <ul class="list">
+            <li><div class="lead">التحكم الكامل</div><div class="muted">يمكن للمستخدم تعديل أو حذف بياناته من خلال الإعدادات، وضبط سياسة الأسعار (رسمي/سوقي) حسب الحاجة.</div></li>
+            <li><div class="lead">الموافقة المستنيرة</div><div class="muted">عند ضبط سعر الصرف يدويًا، يعرض النظام الفرق نسبةً إلى الرسمي لتنبيه المستخدم قبل اعتماد القيمة.</div></li>
+            <li><div class="lead">قابلية النقل</div><div class="muted">يمكن تصدير الإيصالات بصيغة PDF مرتبطة جزئيًا بـSN ورقم الإيصال للمشاركة أو الطباعة.</div></li>
+          </ul>
+        </div>
+        <div>
+          <h2>الاحتفاظ بالبيانات</h2>
+          <ul class="list">
+            <li><div class="lead">محليًا على الجهاز</div><div class="muted">تُحفظ البيانات محليًا طالما التطبيق مثبت ولم يقم المستخدم بحذفها أو إعادة تهيئتها.</div></li>
+            <li><div class="lead">النسخ الاحتياطي</div><div class="muted">يُنصح بالاحتفاظ بنسخة مشفرة من قاعدة البيانات وملف التوقيع الإلكتروني مع SN في موقع آمن.</div></li>
+            <li><div class="lead">عدم الاسترجاع بدون الملفات</div><div class="muted">في حال تلف الجهاز أو تغييره، لا يمكن استعادة البيانات بدون الملفات الاحتياطية المرتبطة بالهوية.</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>الأذونات</h2>
+          <ul class="list">
+            <li><div class="lead">الوصول للتخزين</div><div class="muted">لاستخدام الذاكرة الخارجية في حفظ ملفات التوقيع والإيصالات، مع الالتزام بالتشفير والحد الأدنى من الامتيازات.</div></li>
+            <li><div class="lead">الإنترنت</div><div class="muted">لجلب سعر الذهب العالمي من روابط معتمدة فقط؛ لا تُرسل أي بيانات شخصية عبر الشبكة.</div></li>
+          </ul>
+        </div>
+        <div>
+          <h2>القُصّر</h2>
+          <ul class="list">
+            <li><div class="lead">الاستخدام المسؤول</div><div class="muted">التطبيق موجّه للاستخدام المهني والفردي الواعي؛ لا يجمع بيانات تخص القُصّر عن قصد.</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>التغييرات على هذه السياسة</h2>
+        <p>
+          قد تُحدَّث سياسة الخصوصية لتعكس تحسينات الأمان أو تغييرات في وظائف التطبيق. سيتم إعلام المستخدم داخل التطبيق عند إجراء تغييرات جوهرية،
+          مع ذكر تاريخ النفاذ وإتاحة قراءة النسخة السابقة عند الحاجة.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>التواصل</h2>
+        <p class="muted">
+          لأي استفسار متعلق بالخصوصية أو الأمان، يُرجى التواصل عبر:
+        </p>
+        <p>
+          <span class="pill">البريد الإلكتروني: <span class="code">mrt.alqaem@live.com</span></span>
+          <span class="pill">الهاتف: <span class="code"><span dir="ltr">+964-771-322-1517</span></span></span>
+          <span class="pill">واتسب: <span class="code"><span dir="ltr">+964-771-322-1517</span></span></span>
+        </p>
+      </div>
+    </main>
+
+    <!-- English -->
+    <main data-lang="en">
+      <div class="card">
+        <div class="section">
+          <span class="badge">Last updated: 2025-11-29</span>
+        </div>
+        <div class="section">
+          <h2>About GoldHub</h2>
+          <p>
+            GoldHub is an on-device system for managing and tracking gold and financial assets for individuals, merchants, and companies.
+            It relies on an encrypted local database and measures profit and capital growth using 24k gold as the primary reference,
+            while USD metrics are provided for comparison only.
+          </p>
+          <div class="note">
+            GoldHub does not use cloud storage or external servers; all operations and data remain on the user’s device.
+          </div>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>Data we collect</h2>
+          <ul class="list">
+            <li><div class="lead">Electronic signature identifiers</div><div class="muted">Name and basic contact (if provided), used to generate an electronic signature and derived SN for identity stability.</div></li>
+            <li><div class="lead">Assets and transactions</div><div class="muted">Gold balances (24/21/18), inventory (processed/unprocessed), currency balances, cash movements, and PDF receipts.</div></li>
+            <li><div class="lead">Snapshot logs</div><div class="muted">Daily then weekly snapshots, integrity hashes for entries, and reference gold price per snapshot.</div></li>
+            <li><div class="lead">Usage settings</div><div class="muted">Language tied to local currency, receipt options, and price update policies.</div></li>
+          </ul>
+        </div>
+        <div>
+          <h2>What we do not collect</h2>
+          <ul class="list">
+            <li><div class="lead">Location data</div><div class="muted">No GPS tracking or collection.</div></li>
+            <li><div class="lead">Personal media</div><div class="muted">No access to media unless a logo is explicitly added for receipts.</div></li>
+            <li><div class="lead">Advertising IDs</div><div class="muted">No advertising or behavioral tracking identifiers.</div></li>
+            <li><div class="lead">Third-party sharing</div><div class="muted">Data is not sold or shared with any external party.</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>Storage & security</h2>
+          <ul class="list">
+            <li><div class="lead">Encrypted local database</div><div class="muted">Data is archived locally with encryption, and self-check mechanisms halt the app upon integrity failure.</div></li>
+            <li><div class="lead">Signature files</div><div class="muted">Electronic signature files are encrypted and stored in app path and external storage, linked to SN for identity stability.</div></li>
+            <li><div class="lead">Identity protection</div><div class="muted">Verified databases and files are single-user; other users cannot restore them.</div></li>
+            <li><div class="lead">Security tip</div><div class="muted">Keep encrypted backups of the database and signature file with SN in a trusted location.</div></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Use of data</h2>
+          <ul class="list">
+            <li><div class="lead">Operational purposes only</div><div class="muted">Reports, indicators, receipts, snapshots, and integrity checks.</div></li>
+            <li><div class="lead">No external sharing</div><div class="muted">No data is sent to servers or used for marketing/behavioral analytics.</div></li>
+            <li><div class="lead">Price transparency</div><div class="muted">Gold price updates automatically from trusted sources per snapshot; FX requires user approval or manual adjustment.</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>User rights</h2>
+          <ul class="list">
+            <li><div class="lead">Full control</div><div class="muted">Edit/delete data via settings and choose price policy (official/market).</div></li>
+            <li><div class="lead">Informed consent</div><div class="muted">When adjusting FX manually, the app highlights variance versus official before confirming.</div></li>
+            <li><div class="lead">Portability</div><div class="muted">Export receipts as PDF partially bound to SN and receipt number.</div></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Data retention</h2>
+          <ul class="list">
+            <li><div class="lead">On-device</div><div class="muted">Data remains locally unless deleted or reset by the user.</div></li>
+            <li><div class="lead">Backups</div><div class="muted">Encrypted backups of the database and signature file with SN are recommended.</div></li>
+            <li><div class="lead">No recovery without files</div><div class="muted">If the device is lost or replaced, restoration is not possible without the bound files.</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card grid">
+        <div>
+          <h2>Permissions</h2>
+          <ul class="list">
+            <li><div class="lead">Storage access</div><div class="muted">Used to save encrypted signature files and receipts with least privilege.</div></li>
+            <li><div class="lead">Internet</div><div class="muted">Used solely to fetch global gold prices; no personal data is transmitted.</div></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Minors</h2>
+          <ul class="list">
+            <li><div class="lead">Responsible use</div><div class="muted">The app targets professional and informed individual use; no intentional collection of minors’ data.</div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Changes to this policy</h2>
+        <p>
+          We may update this policy to reflect security improvements or feature changes.
+          Users will be notified within the app when material changes occur, with effective dates and access to prior versions where applicable.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <p class="muted">For privacy or security inquiries, please reach out:</p>
+        <p>
+          <span class="pill">Email: <span class="code">mrt.alqaem@live.com</span></span>
+          <span class="pill">Phone: <span class="code">+964-771-322-1517</span></span>
+          <span class="pill">WhatsApp: <span class="code">+964-771-322-1517</span></span>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 GoldHub — هذه الوثيقة تُقدَّم لأغراض الشفافية ولا تُشكّل نصًا قانونيًا مخصصًا. يُنصح بمراجعة مستشار قانوني قبل النشر النهائي.
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang){
+      document.querySelectorAll('main[data-lang]').forEach(m => {
+        m.style.display = m.getAttribute('data-lang') === lang ? 'block' : 'none';
+      });
+      document.querySelectorAll('.lang-toggle button').forEach(b => {
+        b.classList.toggle('active', b.textContent.trim() === (lang === 'ar' ? 'العربية' : 'English'));
+      });
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    }
+  </script>
+</body>
+</html>
